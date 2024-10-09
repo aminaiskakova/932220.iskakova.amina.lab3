@@ -13,6 +13,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size:xx-large;
     padding-top: 10px;
+    z-index: 1000;
 }
 
 .red {
@@ -39,7 +40,9 @@ html, body {
     font-size: 16px; 
     display: block; 
 }
-
+a:hover {
+    background-color: green;   
+}
 .text {
     text-align: justify;
     font-size: 14px;
@@ -48,13 +51,18 @@ html, body {
     top: 60px;
     width: 490px;
     position: absolute;
-    z-index: -1;  
+   
 }
 
 .text::first-letter {
     font-size: 2em;
-    color: red; 
+    color: red;
 }
+p::selection {
+    background-color: green;
+    color: white;
+}
+
 .footer {
     background-color: black;
     color: white;
@@ -66,9 +74,6 @@ html, body {
     font-size: large;
     padding-top: 5px;
 }
-
-
-
 
 @media(max-width:1500px) {
     .red {
@@ -82,21 +87,8 @@ html, body {
         position: static;
         display: block;     
     }
-    a:hover {
-        background-color: green;   
-    }
+  
     .footer {
         margin-top: 0px;
     }
-    span:hover {
-        background-color: green;
-        color: white;
-    } 
-    
-
-    
-    
-    
-
-    
 }
