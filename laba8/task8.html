@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+    <link rel="stylesheet" href="task8.css">
+    <script src="script.js"></script>
+    <style>
+    </style>
+</head>
+<body on load = "Add()">
+
+<div id="hideBlock" style="display: none;">
+    <div class="row">
+        <input class="input1" type="text">
+        <input class="input2" type="text">
+        <input type="button" onclick="Up(this)" value="↑">
+        <input type="button" onclick="Down(this)" value="↓">
+        <input type="button" onclick="Delete(this)" value="x">
+    </div>
+</div>
+    
+<div id="table"></div>
+
+<button class="button" onclick="Add()">Добавить элемент</button>
+<button class="button" onclick="Save()">Сохранить</button>
+
+<div id="output"></div>
+</body>
+</html>
