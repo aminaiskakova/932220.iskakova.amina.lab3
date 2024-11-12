@@ -1,0 +1,45 @@
+.calculator {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 5px solid #3fc2e6;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid rgb(192, 192, 192);
+    background-color: #dcdcdc;
+    color: #101010;
+}
+
+.buttons .equal {
+    height: 110px;
+    margin-top: -60px; 
+}
+
+.buttons .clear {
+    grid-column: span 2;
+}
+
+.buttons button:active {
+    border: 2px solid #00bcd4; /* Голубой цвет при нажатии */
+}
